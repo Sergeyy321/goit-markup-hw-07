@@ -54,9 +54,50 @@
 <div class="modal">
 <button  type="button" class="button-close" data-modal-close >
   <svg class="modal-icon" ><use  href="./images/symbol-defs-four.svg#icon-close-black"></use></svg></button>
-
+<p class="modal-text">Leave your contacts and we will call you back</p>
+<form action="" class="form-one">
+<div class="form-field">
+  <label for="name" class="label-text">Name</label>
+  <div class="placeholeder-hover">
+<input type="text"  name="name"  id="name" class="input-modal" placeholder=" ">
+<svg  class="icon-placeholder"><use href="./images/symbol-defs-five.svg#icon-person-black"></use></svg> 
 </div>
-<div class="modal-filed"><label for="">Free</label></div>
+</div>
+<div class="form-field">
+<label for="phone" class="label-text">Phone</label>
+<div class="placeholeder-hover">
+<input type="tel" name="phone"  id="phone" class="input-modal"  placeholder=" ">
+<svg  class="icon-placeholder"> <use href="./images/symbol-defs-five.svg#icon-phone-black"></use></svg> 
+</div>
+</div>
+<div class="form-field">
+<label for="email" class="label-text">Email</label>
+<div class="placeholeder-hover">
+<input type="email" name="Email" id="email" class="input-modal"  placeholder=" ">
+<svg  class="icon-placeholder"> <use href="./images/symbol-defs-five.svg#icon-email-black"></use></svg> 
+</div>
+</div>
+<div class="form-field">
+<label for="comment" class="label-text">Comment</label>
+<textarea name="comment"placeholder=" "id="comment"  rows="10" class="textarea"></textarea>
+</div>
+
+<div class="form-field">
+  <div class="form-field-position">
+  <input type="checkbox" name="checkbox" id="Policy" class="checkbox">
+  <label for="Policy" class="label-icon"> <span class="checkbox-lable"><svg width="10" height="8" class="icon-checkbox"> <use href="./images/symbol-defs-five.svg#icon-checkbox"></use></svg> </span>
+    I accept the terms and conditions of the<a class="text-privacy" href="">Privacy Policy</a> 
+ 
+ </label>
+</p>
+</div>
+<button type="submit" class="button-submit">Send</button>
+
+
+
+</form>
+</div>
+
     </div>
     </section>
  <!-- hero -->
@@ -192,6 +233,15 @@
 <li class="footer-social-lists"><a href="" class="footer-links"><svg width="24px" height="24px" class="footer-icon"> <use href="./images/symbol-defs.svg#facebook"></use></svg></a></li>
 <li class="footer-social-lists"><a href="" class="footer-links "><svg  width="24px" height="24px" class="footer-icon"> <use href="./images/symbol-defs.svg#linkedin"></use></svg></a></li></ul>
 </div>
+
+
+<div class="footer-form">
+  <p class="footer-text-link">Subscribe</p>
+<form action="" class="footer-flex" >
+<input type="email" name="email" placeholder="E-mail" class="form-input" >
+<button type="submit" class="button-subscribe">Subscribe <svg class="footer-button-icon"  ><use  href="./images/symbol-defs-five.svg#icon-frame"></use></svg></button>
+</form>
+</div> 
 </div>
 </footer>
 <script src="./js/modal.js"></script>
