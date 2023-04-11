@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
@@ -12,7 +13,8 @@
       rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
       ">
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <!-- <link rel="stylesheet" href="./css/styles.css"/> -->
+    <link rel="stylesheet" href="./css/mobile.css"/>
   </head>
   <body >
     <header class="header">
@@ -38,6 +40,40 @@
           <li class="header-item"><a class="header-link-address link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
        </address> 
+       <button type="button" class="mob-menu-btn" data-mobile-open ><svg class="mob-menu-btn-icon"><use  href="./images/symbol-defs-five.svg#icon-hamburger"></use></svg></button>
+      
+       <div class="mob-menu-wrap is-hidden" data-mobile>
+        
+       <div>
+        <button type="button" class="mob-menu-close-btn" data-mobile-close ><svg class="close-btn-icon"><use  href="./images/symbol-defs-four.svg#icon-close-black"></use></svg></button>
+       <ul>
+        <li class="header-mobile">
+          <a class="mob-menu-item-link" href="./index.html">Studio</a>
+        </li>
+        <li class="header-mobile">
+          <a class="mob-menu-item-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="header-mobile">
+          <a class="mob-menu-item-link" href="">Contacts</a>
+        </li>
+       </ul>  
+      </div>
+      <div>
+        <address>
+        <ul class=" "> 
+          <li class="header-item"><a class="header-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="header-item"><a class=" header-link-address link" href="milto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul></address>
+<div class="mob-soc-container">
+        <ul class="team-list-icons-mob">
+          <li class=""><a href="" class="text-links-mob"> <svg  class="mob-icon"> <use href="./images/symbol-defs.svg#instagram"></use></svg> </a></li>
+        <li class=""><a href="" class="text-links-mob"><svg  class="mob-icon"> <use href="./images/symbol-defs.svg#twitter"></use></svg></a></li>
+        <li class="" ><a href="" class="text-links-mob"><svg  class="mob-icon"> <use href="./images/symbol-defs.svg#facebook"></use></svg></a></li>
+        <li class=""><a href="" class="text-links-mob "><svg   class="mob-icon"> <use href="./images/symbol-defs.svg#linkedin"></use></svg></a></li></ul>
+      </div>
+      </div>
+      </div>
+
      </div>
     </header>
    
@@ -107,31 +143,39 @@
       <h2 hidden class="hidden">Gallery</h2>
       <ul class="solutions-list list">
         <li class="solutions-item item-strategy">
+          <div class="features-list-icon">
           <div class="solution-container">
-         <svg width="64px" height="64px" class=""> <use href="./images/symbol-defs-three.svg#icon-antenna-2"></use></svg> 
+         <svg class="feature-icon"> <use href="./images/symbol-defs-three.svg#icon-antenna-2"></use></svg> 
         </div>
+      </div>
           <h3 class="solutions-item-text">Strategy</h3>
           <p class="solutions-text">Our goal is to identify the business
           problem to walk away with the perfect and creative solution.</p>
         </li>
         <li class="solutions-item item-punctuality">
+          <div class="features-list-icon">
           <div class="solution-container">
-         <svg width="64px" height="64px" class=""> <use href="./images/symbol-defs-three.svg#icon-clock-2"></use></svg> 
+         <svg class="feature-icon"> <use href="./images/symbol-defs-three.svg#icon-clock-2"></use></svg> 
         </div>
+          </div>
           <h3 class="solutions-item-text">Punctuality</h3>
           <p class="solutions-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
         </li>
         <li class="solutions-item item-diligence">
+          <div class="features-list-icon">
           <div class="solution-container">
-         <svg width="64px" height="64px" class=""> <use href="./images/symbol-defs-three.svg#icon-diagram-2"></use></svg>
+         <svg class="feature-icon"> <use href="./images/symbol-defs-three.svg#icon-diagram-2"></use></svg>
         </div>
+          </div>
           <h3 class="solutions-item-text">Diligence</h3>
           <p class="solutions-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
         </li>
         <li class="solutions-item item-technologies">
+          <div class="features-list-icon">
           <div class="solution-container">
-         <svg width="64px" height="64px" class=""> <use href="./images/symbol-defs-three.svg#icon-astronaut-2"></use></svg> 
+         <svg  class="feature-icon"> <use href="./images/symbol-defs-three.svg#icon-astronaut-2"></use></svg> 
         </div>
+          </div>
           <h3 class="solutions-item-text">Technologies</h3>
           <p class="solutions-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
         </li>
@@ -222,7 +266,7 @@
     <div class="container container-main">
     
       <div class="footer-container">
-  <a class="logo link " href="./index.html">Web<span class="footer-logo">Studio</span></a>
+  <a class="logo link " href="./index.html">Web<span class="logo-studio bottom-logo-studio">Studio</span></a>
   <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
 </div>
 <div class="footer-link">
@@ -245,5 +289,6 @@
 </div>
 </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile.js"></script>
   </body>
   </html>
