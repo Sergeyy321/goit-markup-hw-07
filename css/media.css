@@ -8,12 +8,12 @@
     --navy-blue:#2E2F42;
     --button-hover:#404BBF;
     --white: #FFFFFF;
-    --cornflower: #E7E9FC;
+    --flower-text: #E7E9FC;
     --slate: #434455;
-    --ocean: #31D0AA;
+    --text-hover: #31D0AA;
     --light-slate: #8E8F99;
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    --dairy: #FCFCFC;
+    --extra-color: #FCFCFC;
     }
 @media screen and (min-width: 480px) {
     .container {
@@ -89,13 +89,13 @@ color: var(--text-color);
 transition: color var(--transition);
 }
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bcg-tab.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-tabe.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bcg-tab-2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-tabe-2x.jpg);
   }
 }
     .advantages-item {
@@ -184,13 +184,13 @@ transition: color var(--transition);
 .hero {
         padding: 188px 0;
         max-width: 1440px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bcg-pc.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-pc.jpg);
     }
     @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bcg-pc-2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-pc-2x.jpg);
   }
 }
     .hero-header {
